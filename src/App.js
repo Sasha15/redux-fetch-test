@@ -8,11 +8,6 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.shouldComponentRender = this.shouldComponentRender.bind(this);
-  }
-
   componentDidMount() {
     const {fetchProducts} = this.props;
     fetchProducts();
